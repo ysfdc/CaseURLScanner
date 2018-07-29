@@ -1,4 +1,4 @@
-## Overview and Business Case: 
+## Overview and Business Case
 
 
 ## Usage and Pre-reqs
@@ -9,12 +9,12 @@
 	first be processed by the scanURLs class before allowing users 
 	access to the cases.
 
-	 *Create a new field on Case called Bypass Assignment Rule 1 (Boolean)
-	 *Update Assignment rules as follows:
-		*First rule, set Bypass Assignment Rule 1 to FALSE
-		*All other rules, set Bypass Assignment Rule 1 to TRUE
-	 *Create a new queue called No Man's Queue
-	 	*Update the NoManQueueID based on your Queue
+	 * Create a new field on Case called Bypass Assignment Rule 1 (Boolean)
+	 * Update Assignment rules as follows:
+		* First rule, set Bypass Assignment Rule 1 to FALSE
+		* All other rules, set Bypass Assignment Rule 1 to TRUE
+	 * Create a new queue called No Man's Queue
+	 	* Update the NoManQueueID based on your Queue
 
 
 ## caseTrigger.Trigger
@@ -37,6 +37,6 @@ This class is used to call out to VT and any additional scanner you want to add.
 In this class you need to update the API Key and the Threshold value.
 The Threshold value is the numeric value you determine as minimum number of positives to deem the URL malicious.
 
-##caseReassignmentPostScan.cls
+## caseReassignmentPostScan.cls
 This class is used to either move the case back through the assignment rules if clean or
 move the case a No Man's Queue for further evaluation.
